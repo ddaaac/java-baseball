@@ -5,6 +5,10 @@ public class OutputView {
         System.out.println(format(result));
     }
 
+    public void printException(Throwable e) {
+        System.out.println(e.getMessage());
+    }
+
     private String format(GameResultResponse result) {
         if (result.isNothing()) {
             return "낫싱";
